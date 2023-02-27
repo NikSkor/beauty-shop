@@ -35,6 +35,14 @@
     letter-spacing: 0.05em;
     color: $bg-color;
     padding: 9px 40px;
+    transition-property: background-color, color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+
+    &:hover {
+      color: $mainColor;
+      background-color: #17e825;
+    }
   }
 }
 

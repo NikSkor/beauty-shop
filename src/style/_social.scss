@@ -1,0 +1,32 @@
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 38px;
+
+      &-list {
+        display: flex;
+        gap: 20px;
+      }
+
+      &__link {
+        color: $lime-green;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $secondColor;
+        }
+      }
+    
+      &__adress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // vertical-align: center;
+        // text-align: center;
+        line-height: 16px;
+        color: $mainColor;
+      }
+  }
+

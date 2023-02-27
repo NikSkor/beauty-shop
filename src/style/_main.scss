@@ -1,15 +1,22 @@
 .main {
   &__btn {
-    display: inline-block;
+    display: block;
     background: $lime-green;
     border: 2px solid $bg-color;
     border-radius: 40px;
-    padding: 13px 27px;
+    padding: 13px 26px;
     line-height: 16px;
     text-align: center;
-    letter-spacing: 0.05em;
     color: $bg-color;
-    max-width: 170px;
-    // min-width: 170px;
+    width: 170px;
+    transition-property: background-color, border-color, color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    
+    &:hover {
+      background-color: $bg-color;
+      border-color: $lime-green;
+      color: $mainColor;
+    }
   }
 }

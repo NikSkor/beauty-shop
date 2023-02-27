@@ -18,6 +18,11 @@
     &-link {
       line-height: 16px;
       color: $secondColor;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+      color: $lime-green;
+      }
     }
   }
 

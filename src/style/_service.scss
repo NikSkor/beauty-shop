@@ -10,19 +10,60 @@
   &__block {
     flex-basis: 50%;
     background-color: $lime-green;
+    display: flex;
+    padding: 35px 45px 40px 35px;
+
+    &_left {
+      gap: 65px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &_right {
+      flex-direction: column;
+      gap: 25px;
+      align-items: flex-start;
+      
+    }
+
   }
 
-  &__title {}
+  &__mail {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+  }
 
-  &__text {}
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $bg-color;
+  }
 
-  &__form {}
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: $bg-color;
+  }
 
-  &__label {}
+  &__input {
+    background: $bg-color;
+    border-radius: 30px;
+    padding: 9px 25px;
+    border: none;
+    line-height: 16px;
+    color: #C4C4C4;
 
-  &__icon {}
+    &:focus {
+      outline-color: #66C09D;
+    }
+  }
 
-  &__link {}
+  &__icon {
+    width: 140px;
+  }
 }
 
 
