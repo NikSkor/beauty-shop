@@ -2,9 +2,18 @@
   background-color: $light-gray;
   padding-bottom: 132px;
 
+  @include laptop {
+    padding-bottom: 102px;
+  }
+
   &__sector {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+
+    @include laptop {
+      gap: 25px;
+    }
   }
   
   &__block {
@@ -13,16 +22,41 @@
     display: flex;
     padding: 35px 45px 40px 35px;
 
+    @include laptop {
+    padding: 30px 40px 35px 30px;
+    }
+
+    @include tablet {
+      flex-basis: 100%;
+    }
+
     &_left {
-      gap: 65px;
+      // gap: 65px;
       align-items: center;
       justify-content: space-between;
+
+      @include laptop {
+        flex-basis: 60%;
+      }
+      @include tablet {
+        flex-basis: 100%;
+      }
     }
 
     &_right {
       flex-direction: column;
       gap: 25px;
       align-items: flex-start;
+
+      @include laptop {
+        gap: 15px;
+        flex-basis: 40%;
+      }
+      @include tablet {
+        gap: 25px;
+        flex-basis: 100%;
+        align-items: center;
+      }
       
     }
 
@@ -32,7 +66,30 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    @include laptop {
+      gap: 15px;
+    }
+    @include tablet {
+      gap: 25px;
+    }
     
+    &-link {
+      width: 140px;
+      color: $bg-color;
+      transition: color 0.3s ease-in-out;
+      
+      @include laptop {
+        width: 80px;
+      }
+      @include tablet {
+        width: 120px;
+      }
+      
+      &:hover {
+        color: $mainColor;
+      }
+    }
   }
 
   &__title {
@@ -63,6 +120,10 @@
 
   &__icon {
     width: 140px;
+
+    @include laptop {
+        width: 80px;
+      }
   }
 }
 

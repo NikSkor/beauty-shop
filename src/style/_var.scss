@@ -11,7 +11,7 @@ $bg-color: #FFFFFF;
 $laptop: 1024px;
 $tablet: 768px;
 $mobile: 560px;
-$mini: 360px;
+// $mini: 360px;
 
 @mixin laptop {
   @media (max-width: #{$laptop}) {
@@ -31,11 +31,11 @@ $mini: 360px;
   }
 }
 
-@mixin mini {
-  @media (max-width: #{$mini}) {
-    @content;
-  }
-}
+// @mixin mini {
+//   @media (max-width: #{$mini}) {
+//     @content;
+//   }
+// }
 
 
 

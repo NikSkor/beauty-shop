@@ -9,6 +9,10 @@
     color: $mainColor;
     margin-right: 40px;
     transition: color 0.3s ease-in-out;
+
+    @include laptop {
+      margin-right: 10px;
+    }
     
       &:hover {
         color: $lime-green;

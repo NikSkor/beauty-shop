@@ -1,5 +1,11 @@
 .navigation {
+  margin-top: 30px;
   margin-bottom: 30px;
+
+  @include tablet {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   &__list {
     display: flex;
@@ -8,6 +14,10 @@
   
   &__item:not(:last-child) {
     margin-right: 40px;
+
+    @include tablet {
+      margin-right: 20px;
+    }
   }
 
   &__link {
@@ -15,6 +25,11 @@
     line-height: 19px;
     color: $mainColor;
     transition: color 0.3s ease-in-out;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 17px;
+    }
     
       &:hover {
         color: $lime-green;

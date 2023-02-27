@@ -2,16 +2,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 37px;
     padding-bottom: 38px;
+
+    @include laptop {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 
       &-list {
         display: flex;
         gap: 20px;
+
+        @include laptop {
+          gap: 10px;
+        }
       }
 
       &__link {
+        display: block;
         color: $lime-green;
         transition: color 0.3s ease-in-out;
+
+        @include laptop {
+          width: 35px;
+          height: 35px;
+        }
 
         &:hover {
           color: $secondColor;
@@ -21,7 +37,8 @@
       &__adress {
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
+        align-self: center;
 
         // vertical-align: center;
         // text-align: center;
