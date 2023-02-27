@@ -1,0 +1,20 @@
+.navigation {
+  margin-bottom: 30px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: $mainColor;
+  }
+}
+
+

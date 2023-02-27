@@ -1,0 +1,55 @@
+.header {
+  &__nav {
+    background-color: $light-gray;
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    max-width: 100%;
+    display: flex;
+    
+    &-list {
+      display: flex;
+    }
+
+    &-item:not(:last-child){
+      margin-right: 30px;
+    }
+
+    &-link {
+      line-height: 16px;
+      color: $secondColor;
+    }
+  }
+
+  &__line {
+    padding: 20px 0;
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 30px;
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-company {
+      display: flex;
+      align-items: center;
+    }
+
+    &-logo {
+      margin-right: 20px;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.1em;
+      color: $lime-green;
+    }
+  }
+}
+
+
+
+

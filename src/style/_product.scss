@@ -1,0 +1,40 @@
+.product {
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 30px;
+  gap: 20px;
+
+  &__image {
+    width: 125px;
+    height: 166px;
+  }
+  
+  &__title {
+    text-align: center;
+    line-height: 20px;
+    color: $secondColor;
+
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $mainColor;
+  }
+
+  &__link {
+    background: $lime-green;
+    border-radius: 30px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $bg-color;
+    padding: 9px 40px;
+  }
+}
+

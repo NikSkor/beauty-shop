@@ -1,0 +1,28 @@
+.service {
+  background-color: $light-gray;
+  padding-bottom: 132px;
+
+  &__sector {
+    display: flex;
+    gap: 30px;
+  }
+  
+  &__block {
+    flex-basis: 50%;
+    background-color: $lime-green;
+  }
+
+  &__title {}
+
+  &__text {}
+
+  &__form {}
+
+  &__label {}
+
+  &__icon {}
+
+  &__link {}
+}
+
+

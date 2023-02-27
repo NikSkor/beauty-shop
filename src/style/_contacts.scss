@@ -1,0 +1,19 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  &__phone {
+    font-size: 16px;
+    line-height: 19px;
+    color: $mainColor;
+    margin-right: 40px;
+  }
+  
+  &__btn {
+    border: 2px solid $lime-green;
+    border-radius: 40px;
+    padding: 13px 27px;
+    line-height: 16px;
+    color: $mainColor;
+  }
+}
+

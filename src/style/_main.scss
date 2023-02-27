@@ -1,0 +1,15 @@
+.main {
+  &__btn {
+    display: inline-block;
+    background: $lime-green;
+    border: 2px solid $bg-color;
+    border-radius: 40px;
+    padding: 13px 27px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $bg-color;
+    max-width: 170px;
+    // min-width: 170px;
+  }
+}
