@@ -6,13 +6,28 @@
     padding-bottom: 102px;
   }
 
+  @include tablet {
+    padding-bottom: 70px;
+  }
+
+  @include mobile {
+    padding-bottom: 30px;
+  }
+
   &__sector {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
 
     @include laptop {
       gap: 25px;
+    }
+
+    @include tablet {
+    flex-wrap: wrap;
+    }
+
+    @include mobile {
+      gap: 10px;
     }
   }
   
@@ -30,17 +45,28 @@
       flex-basis: 100%;
     }
 
+    @include mobile {
+      padding: 25px 35px 30px 25px;
+    }
+
     &_left {
-      // gap: 65px;
       align-items: center;
       justify-content: space-between;
 
       @include laptop {
         flex-basis: 60%;
       }
+
       @include tablet {
         flex-basis: 100%;
       }
+
+      @include mobile {
+        flex-direction: column;
+        gap: 20px;
+        
+      }
+
     }
 
     &_right {
@@ -56,6 +82,7 @@
         gap: 25px;
         flex-basis: 100%;
         align-items: center;
+        text-align: center;
       }
       
     }
@@ -73,6 +100,11 @@
     @include tablet {
       gap: 25px;
     }
+
+    @include mobile {
+      align-items: center;
+      gap: 15px;
+    }
     
     &-link {
       width: 140px;
@@ -82,8 +114,13 @@
       @include laptop {
         width: 80px;
       }
+
       @include tablet {
         width: 120px;
+      }
+
+      @include mobile {
+        width: 80px;
       }
       
       &:hover {
@@ -97,12 +134,35 @@
     font-size: 18px;
     line-height: 21px;
     color: $bg-color;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    
   }
 
   &__text {
+    display: flex;
     font-size: 14px;
     line-height: 20px;
     color: $bg-color;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  
+    @include mobile {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+    }
   }
 
   &__input {
@@ -113,17 +173,13 @@
     line-height: 16px;
     color: #C4C4C4;
 
+    @include mobile {
+      padding: 7px 23px;
+    }
+
     &:focus {
       outline-color: #66C09D;
     }
-  }
-
-  &__icon {
-    width: 140px;
-
-    @include laptop {
-        width: 80px;
-      }
   }
 }
 

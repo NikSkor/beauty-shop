@@ -6,6 +6,18 @@
   min-height: 604px;
   // margin-bottom: 80px;
 
+  @include laptop {
+    min-height: 500px;
+  }
+
+  @include tablet {
+    min-height: 400px;
+  }
+
+  @include mobile {
+    min-height: 200px;
+  }
+
   &__content {
     height: 100%;
     color: $bg-color;
@@ -17,9 +29,21 @@
     align-items: flex-start;
     
     @include laptop {
-    max-width: 300px;
+      max-width: 300px;
+      padding-top: 152px;
+      padding-bottom: 153px;
     }
-    
+
+    @include tablet {
+      padding-top: 112px;
+      padding-bottom: 113px;
+    }
+
+    @include mobile {
+      padding-top: 82px;
+      padding-bottom: 83px;
+      max-width: 200px;
+    }
   }
 
   &__title {
@@ -31,12 +55,21 @@
     @include laptop {
       font-size: 44px;
     }
+
+    @include laptop {
+      font-size: 30px;
+    }
     
   }
 
   &__text {
     line-height: 20px;
     margin-bottom: 50px;
+
+    @include mobile {
+    line-height: 16px;
+    font-size: 12px;
+    }
   }
 
   &__link {

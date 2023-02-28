@@ -9,6 +9,11 @@
     padding: 15px 0;
   }
 
+  @include laptop {
+    font-size: 8px;
+    padding: 10px 0;
+  }
+
   &__block {
     display: flex;
     justify-content: space-between;

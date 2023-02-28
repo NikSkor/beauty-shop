@@ -18,6 +18,10 @@
 
     &-item:not(:last-child){
       margin-right: 30px;
+
+      @include mobile {
+        margin-right: 10px;
+      }
     }
 
     &-link {
