@@ -1,0 +1,78 @@
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 37px;
+    padding-bottom: 38px;
+
+    @include laptop {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    &__info {
+      display: flex;
+      flex-basis: 60%;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+
+      @include laptop {
+      flex-basis: 50%;
+      }
+
+      @include tablet {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+      }
+    }
+
+    &__contacts {
+      flex-basis: 40%;
+
+      @include laptop {
+        flex-basis: 50%;
+      }
+
+      @include tablet {
+        align-items: end;
+        justify-content: center;
+      }
+    }
+
+    
+
+    &-list {
+      display: flex;
+      gap: 20px;
+
+      @include laptop {
+        gap: 10px;
+      }
+    }
+
+    &__link {
+      display: block;
+      color: $lime-green;
+      transition: color 0.3s ease-in-out;
+
+      @include laptop {
+        width: 35px;
+        height: 35px;
+      }
+
+      &:hover {
+        color: $secondColor;
+      }
+    }
+  
+    &__adress {
+      display: inline-block;
+      line-height: 16px;
+      color: $mainColor;
+    }
+
+      
+  }
+

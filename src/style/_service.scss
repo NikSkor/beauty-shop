@@ -1,0 +1,186 @@
+.service {
+  background-color: $light-gray;
+  padding-bottom: 132px;
+
+  @include laptop {
+    padding-bottom: 102px;
+  }
+
+  @include tablet {
+    padding-bottom: 70px;
+  }
+
+  @include mobile {
+    padding-bottom: 30px;
+  }
+
+  &__sector {
+    display: flex;
+    gap: 30px;
+
+    @include laptop {
+      gap: 25px;
+    }
+
+    @include tablet {
+    flex-wrap: wrap;
+    }
+
+    @include mobile {
+      gap: 10px;
+    }
+  }
+  
+  &__block {
+    flex-basis: 50%;
+    background-color: $lime-green;
+    display: flex;
+    padding: 35px 45px 40px 35px;
+
+    @include laptop {
+    padding: 30px 40px 35px 30px;
+    }
+
+    @include tablet {
+      flex-basis: 100%;
+    }
+
+    @include mobile {
+      padding: 25px 35px 30px 25px;
+    }
+
+    &_left {
+      align-items: center;
+      justify-content: space-between;
+
+      @include laptop {
+        flex-basis: 60%;
+      }
+
+      @include tablet {
+        flex-basis: 100%;
+      }
+
+      @include mobile {
+        flex-direction: column;
+        gap: 20px;
+        
+      }
+
+    }
+
+    &_right {
+      flex-direction: column;
+      gap: 25px;
+      align-items: flex-start;
+
+      @include laptop {
+        gap: 15px;
+        flex-basis: 40%;
+      }
+      @include tablet {
+        gap: 25px;
+        flex-basis: 100%;
+        align-items: center;
+        text-align: center;
+      }
+      
+    }
+
+  }
+
+  &__mail {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @include laptop {
+      gap: 15px;
+    }
+    @include tablet {
+      gap: 25px;
+    }
+
+    @include mobile {
+      align-items: center;
+      gap: 15px;
+    }
+    
+    &-link {
+      width: 140px;
+      color: $bg-color;
+      transition: color 0.3s ease-in-out;
+      
+      @include laptop {
+        width: 80px;
+      }
+
+      @include tablet {
+        width: 120px;
+      }
+
+      @include mobile {
+        width: 80px;
+      }
+      
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $bg-color;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    
+  }
+
+  &__text {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    color: $bg-color;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  
+    @include mobile {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+    }
+  }
+
+  &__input {
+    background: $bg-color;
+    border-radius: 30px;
+    padding: 9px 25px;
+    border: none;
+    line-height: 16px;
+    color: #C4C4C4;
+
+    @include mobile {
+      padding: 7px 23px;
+    }
+
+    &:focus {
+      outline-color: #66C09D;
+    }
+  }
+}
+
+
